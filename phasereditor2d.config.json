@@ -1,0 +1,6 @@
+{
+  "skip": [],
+  "plugins": [],
+  "flags": ["-disable-gzip"],
+  "playUrl": "http://localhost:1959"
+}

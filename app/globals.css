@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: var(--light);
+}
+
+body {
+  background-color: var(--azure);
+}
+
+.button {
+  width: 140px;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--dark);
+  color: var(--light);
+  border: 1px solid var(--light);
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 1px solid var(--turquoise);
+    color: var(--turquoise);
+  }
+
+  &:active {
+    background-color: var(--turquoise);
+  }
+
+  /* Disabled styles */
+  &:disabled {
+    cursor: not-allowed;
+    border: 1px solid rgba(var(--light), 0.3);
+    color: rgba(var(--light), 0.3);
+  }
+}
